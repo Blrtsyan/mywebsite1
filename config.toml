@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://example.org/"
+baseURL = "https://david-blrtsyan-mfa2021.netlify.app/"
 languageCode = "en-us"
 title = "Portfolio website for David Blrtsyan"
 theme = "forty"
