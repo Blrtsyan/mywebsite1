@@ -1,8 +1,9 @@
 ---
-title: "Returns of financial securities"
+title: "Returns of publicly traded stocks"
 date: "`r Sys.Date()`"
-description: ''
+description: 'Exploring the distribution of S&P 500 ETF and Dow Jones Constituents'
 draft: no
+image: nyse_floor.jpg
 keywords: ''
 slug: financial_returns
 categories:

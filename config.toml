@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://david-blrtsyan-mfa2021.netlify.app/"
+baseURL = "https://david-blrtsyan-portfolio.netlify.app/"
 languageCode = "en-us"
 title = "Portfolio website for David Blrtsyan"
 theme = "forty"
@@ -82,7 +82,7 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is David!"
-    subtitle = "Welcome to my personal web! I am a Masters in Financial Analysis student at LBS sharing here my recent projects with R"
+    subtitle = "Welcome to my personal web! I am a Masters in Financial Analysis student at LBS sharing here my recent projects written with R"
     buttonText = "View Projects"
 
 
@@ -175,7 +175,7 @@ disqusShortname = ""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "David Blrtsyan"
+    copyright = "David Blrtsyan | Images used under the Creative Commons"
 
     # Uses font awesome icons
     [[params.footer.social]]

@@ -1,8 +1,9 @@
 ---
 title: "Omega Group plc: a case for pay discrimination?"
 date: "`r Sys.Date()`"
-description: ''
+description: 'Do statistics conclude men earn unfairly more or just lies?'
 draft: no
+image: pay_gap.jpeg
 keywords: ''
 slug: pay_discrimination
 categories:

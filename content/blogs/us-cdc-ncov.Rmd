@@ -1,8 +1,9 @@
 ---
 title: "US Covid-19 Public Stats"
 date: "`r Sys.Date()`"
-description: ''
+description: 'Visiualising the key data on comorbidities and ICU admissions'
 draft: no
+image: fauci_trump_briefing.jpg
 keywords: ''
 slug: us-cdc-ncov
 categories:
@@ -39,8 +40,6 @@ library(httr)
 library(readxl)
 library(vroom)
 ```
-
-# CDC COVID-19 Public Use Data
 
 The [CDC Covid-19 Case Surveillance Data](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf) has well over 3 million entries of individual, de-identified patient data. 
 
