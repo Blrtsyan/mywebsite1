@@ -1,7 +1,19 @@
+---
+title: "US Covid-19 Public Stats"
+date: "2020-10-22"
+description: ''
+draft: no
+keywords: ''
+slug: us-cdc-ncov
+categories:
+- ''
+- ''
+---
 
 
-<div id="challenge-1-cdc-covid-19-public-use-data" class="section level1">
-<h1>Challenge 1: CDC COVID-19 Public Use Data</h1>
+
+<div id="cdc-covid-19-public-use-data" class="section level1">
+<h1>CDC COVID-19 Public Use Data</h1>
 <p>The <a href="https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf">CDC Covid-19 Case Surveillance Data</a> has well over 3 million entries of individual, de-identified patient data.</p>
 <pre class="r"><code># URL link to CDC to download data
 url &lt;- &quot;https://data.cdc.gov/api/views/vbim-akqf/rows.csv?accessType=DOWNLOAD&quot;
@@ -38,13 +50,11 @@ covid_data &lt;- vroom::vroom(url)%&gt;%
          caption = &quot;Source: CDC&quot;) +
   theme_bw() +
   theme(plot.title = element_text(size = 11))+
-  scale_x_continuous(labels = scales :: percent)</code></pre>
-<p><img src="us-cdc-ncov_files/figure-html/unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" /></p>
+  scale_x_continuous(labels = function(prop) paste0(prop, &quot;%&quot;))</code></pre>
+<p><img src="/blogs/us-cdc-ncov_files/figure-html/unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="2" style="list-style-type: decimal">
 <li>by age group, sex, and whether the patient was admitted to Intensive Care Unit (ICU) or not.</li>
 </ol>
-<pre class="r"><code>knitr::include_graphics(here::here(&quot;images&quot;, &quot;covid_death_rate_icu.png&quot;), error = FALSE)</code></pre>
-<p><img src="/Users/Blrtsyan/Desktop/Education/LBS/CA09/mywebsite1/images/covid_death_rate_icu.png" width="100%" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>filtered_covid_ICU &lt;-covid_data %&gt;% 
   filter(death_yn!= &quot;Unknown&quot;,
          death_yn!= &quot;Missing&quot;,
@@ -72,6 +82,6 @@ filtered_covid_ICU %&gt;%
          caption = &quot;Source: CDC&quot;) +
   theme_bw() +
   theme(plot.title = element_text(size = 11))+
-  scale_x_continuous(labels = scales :: percent)</code></pre>
-<p><img src="us-cdc-ncov_files/figure-html/unnamed-chunk-3-2.png" width="100%" style="display: block; margin: auto;" /></p>
+  scale_x_continuous(labels = function(prop) paste0(prop, &quot;%&quot;))</code></pre>
+<p><img src="/blogs/us-cdc-ncov_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
