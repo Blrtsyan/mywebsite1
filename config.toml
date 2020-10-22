@@ -107,15 +107,13 @@ disqusShortname = ""
       title = "US COVID-19 Public Stats"
       subtitle = "Key data on comorbidities and ICU admissions"
       image = "pic03.jpg"
-      url = "blogs/yield_curve_inversion"
-      #us-cdc-ncov
+      url = "blogs/us-cdc-ncov"
 
     [[params.tiles.showcase]]
       title = "Omega Group plc: a case for pay discrimination?"
       subtitle = "Do statistics conclude men earn unfairly more or not?"
       image = "pic04.jpg"
-      url = "blogs/yield_curve_inversion"
-      #pay-discrimination
+      url = "blogs/pay_discrimination"
       
     #[[params.tiles.showcase]]
       #title = "Consequat"
